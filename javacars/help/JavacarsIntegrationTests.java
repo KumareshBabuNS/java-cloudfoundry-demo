@@ -18,10 +18,6 @@ public class JavacarsIntegrationTests {
 	private TestRestTemplate testRestTemplate;
 
 	@Test
-	public void testContextLoads() {
-	}
-
-	@Test
     public void testCreateManufacturer(){
         ResponseEntity<ManufacturerEntity> response = testRestTemplate.postForEntity("/manufacturers", new ManufacturerEntity("SKODA"), ManufacturerEntity.class);
         Assert.assertEquals(response.getStatusCode(), HttpStatus.CREATED);
