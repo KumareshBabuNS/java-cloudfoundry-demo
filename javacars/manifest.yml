@@ -1,0 +1,6 @@
+---
+applications:
+  - name: javacars
+    path: ./build/libs/javacars-0.0.1-SNAPSHOT.jar
+    services:
+      - mysql
