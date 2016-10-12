@@ -1,6 +1,5 @@
 **/build
 **/.DS_Store
-*.zip
 **/.gradle
 **/.idea
 *.class
