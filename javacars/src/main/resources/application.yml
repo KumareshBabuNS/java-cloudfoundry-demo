@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb
+    username: user
+    password: pass
+    platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+#---
+#
+# Not Required - Spring "Auto Reconfigure" takes care of the details during
+# staging and restarting - based on the 'bound' services.
+#
+#spring:
+#  profiles: postgres
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/testdb
+#    username: user
+#    password: pass
+#    platform: postgresql
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    show-sql: true
